@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Weather Forecast</title>
+    <link type="text/css" media="screen" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+<style>
+   td, th, tr {
+        padding: 10px;
+       border: 2px solid #FF0000;
+    }
+</style>
+<center><h1>Weather Forecast for <%= place %> in every 3 hours</h1></center>
+<% for(var i = 0; i < data.length; i++) { %>
+    <table class="report">
+        <thead align="center">
+        <tr>
+            <th>Date</th>
+            <th>Temperatre</th>
+            <th>Humidity</th>
+            <th>Report</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><%= data[i].date %></td>
+            <td><%= data[i].temperatre %></td>
+            <td><%= data[i].humidity %></td>
+            <td><%= data[i].report %></td>
+        </tr>
+        </tbody>
+    </table>
+    <% } %>
+</body>
+</html>
