@@ -65,7 +65,7 @@ Step 7: To start project use following command.
 
 API Documentation:-
 
-- Based Endpoint: http://localhost:8000?city=pune
+- Based Endpoint: http://localhost:8000?city=xxxx
 Method: GET
 - Request Headers:
 - Version: 1.0
@@ -78,4 +78,3 @@ Error
 Description:
 500: ERROR_OCCURED - Error occured in fetching the Weather Data
 501: CITY_NAME_ERROR - You must provide city name appended in the URL like http://localhost:8000?city=xxx
-``
